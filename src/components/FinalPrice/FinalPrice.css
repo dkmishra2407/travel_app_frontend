@@ -1,0 +1,23 @@
+.price-details-container{
+    width: 25rem;
+    margin-left: auto;
+    margin-top: 7rem;
+    background-color: var(--background-color);
+    padding-left: 1rem;
+}
+
+.price-rating-container {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Creates two columns: one flexible and one auto-sized */
+}
+
+.price {
+    font-size: 1.25rem; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the price bold */
+}
+
+.rating {
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #ffcc00; /* Optional: color for the star rating */
+    margin-left: 11rem;
+}

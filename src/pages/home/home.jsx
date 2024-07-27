@@ -6,10 +6,12 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import "./home.css";
 import { useCategory } from '../../context/catagory-context';
 
+
 export const Home = () => {
   const [hotels, setHotels] = useState([]); // Initialize with an empty array
   const [hasmore, sethasmore] = useState(true);
   const [testdata, settestdata] = useState([]);
+
   const [currentindex, setcurrentindex] = useState(16);
    const { hotelCategory } = useCategory();
    console.log(hotelCategory)
@@ -46,6 +48,7 @@ export const Home = () => {
     }, 1000)
   }
 
+  
   return (
     <Fragment>
       <Navbar route="home" />

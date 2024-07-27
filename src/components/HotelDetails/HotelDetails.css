@@ -1,0 +1,52 @@
+/* 
+.highlight-details{
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.border-black{
+    border-bottom: 1.5px solid black;
+}
+
+.abc{
+    padding-top: 1.5px;
+} */
+
+
+.highlight-details {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+    margin: 15px 0;
+}
+
+.border-black {
+    border-bottom: 1.5px solid black;
+}
+
+.guest-info,
+.workplace-description,
+.rating,
+.cancelable-or-not,
+.property-type {
+    margin-top: 8px;
+}
+
+.amenities-list,
+.house-rules-list,
+.health-and-safety-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.amenities-name {
+    margin-bottom: 4px;
+}
+
+.hotel-details-container{
+    width: 65%;
+}

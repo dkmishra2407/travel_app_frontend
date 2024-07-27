@@ -1,13 +1,16 @@
 
 import "./hotelcard.css";
-import InfiniteScroll from "react-infinite-scroll-component";
+import { useNavigate } from 'react-router-dom';
+
 export const HotelCard = ({hotel}) => {
 
   const {_id,name,price,rating,image,state,address} = hotel;
-
+  const handlesinglehotel = () => {
+    navigate(`/hotels/${name}/${address}/${state}/${_id}/reserve`)
+  }
+   const navigate = useNavigate();
   return (
-    <div className="relative Hotelcard-container cursor-pointer shadow">
-      {/* Image and hotel details */}
+    <div className="relative Hotelcard-container cursor-pointer shadow" onClick={handlesinglehotel}>
       <div className="">
         <img
           className="img"
