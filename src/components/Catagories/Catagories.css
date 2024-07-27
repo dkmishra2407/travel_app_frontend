@@ -1,0 +1,31 @@
+.catgories-container{
+    padding: 6rem 2rem 1rem 2rem;
+    z-index: 1;
+    color: var(--text-primary-color);
+    background-color: var(--background-color);
+    width: 100vw;
+    position: fixed;
+}
+
+.gap-large{
+    gap: 2rem;
+}
+
+.button .btn-catagory{
+    padding: 0;
+    top: 6rem;
+    border: 1px solid var(--accent-color);
+    color: var(--text-primary-color);
+    border-radius: 20px;
+}
+.btn-left{
+    left: 2rem;
+}
+
+.btn-right{
+    right: 2rem;
+}
+
+.boreder-bottom{
+    border-bottom: 1px solid var(--accent-color);
+}

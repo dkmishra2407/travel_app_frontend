@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0");
+
+.Hotelcard-container {
+  height: 20rem;
+  border-radius: 4px;
+  background-color: var(--background-color);
+  width: 20rem;
+  padding: 5px;
+}
+
+.img {
+  width: 100%;
+  height: 15rem;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.hotel-details {
+  color: var(--text-primary-color);
+}
+
+.location {
+  font-weight: bold;
+}
+
+.rating {
+  margin-left: auto;
+}
+
+.hotel-name,
+.price-details {
+  color: var(--text-primary-color);
+  font-size: 0.875;
+  padding: 0 0 0 4px;
+}
+
+.wishlist-button {
+  padding: 1.25rem;
+  right: 8px;
+  top: 4px;
+}
+
+.bookmark {
+  color: #717177;
+}
+
+.price-details .price {
+  font-weight: bold;    
+  padding-bottom: 2rem;
+}

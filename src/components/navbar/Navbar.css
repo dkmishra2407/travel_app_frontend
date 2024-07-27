@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+.heading{
+    background-color: var(--background-color);
+    padding: 8px 3rem;
+    border-bottom: 1px solid var(--accent-color);
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.heading-1{
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    padding: 0;
+}
+.nav{
+    border: 1px solid var(--container-border-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav:hover{
+    box-shadow: 2px 2px 5px 4px rgba(0,0,0,0.1);
+}
+
+.menu{
+    border-right: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+}
+.person{
+    background-color: var(--accent-color);
+    border-radius: 0 4px 4px 0;
+}
+.profile-option{
+    color: var(--text-primary-color);
+    font-size: 2.5rem;
+}
+
+.form-option{
+    color: var(--text-primary-color);
+    padding: 8px;
+    font-size: 0.875rem;
+}
+
+.border-right-1px{
+    border-radius: 1px solid var(--accent-color);
+    height: 70%;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+    justify-content: space-between;
+}
+.form-container{
+    background-color: #fff;
+    border-radius: 4px;
+    height: 2.75rem;
+    color: black;
+}
+
+.justify-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search{
+    background-color: var(--primary-color);
+    height: 100%;
+    padding: 8px;
+}
+
+.timepasscontainer{
+    margin-left: 100px;
+}

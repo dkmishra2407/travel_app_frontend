@@ -1,0 +1,14 @@
+.main{
+    padding: 11rem 3rem 4rem 3rem;
+}
+
+.gap-larger{
+   gap: 3rem;
+}
+
+.loading{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
