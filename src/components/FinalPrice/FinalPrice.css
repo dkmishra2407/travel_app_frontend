@@ -4,11 +4,11 @@
     margin-top: 7rem;
     background-color: var(--background-color);
     padding-left: 1rem;
-}
-
-.price-rating-container {
-    display: grid;
-    grid-template-columns: 1fr auto; /* Creates two columns: one flexible and one auto-sized */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 2rem;
+    height: 37rem;
 }
 
 .price {
@@ -16,8 +16,62 @@
     font-weight: bold; /* Makes the price bold */
 }
 
-.rating {
+.rating-1 {
     font-size: 1rem; /* Adjust font size as needed */
     color: #ffcc00; /* Optional: color for the star rating */
-    margin-left: 11rem;
+}
+
+.check-in-out{
+    justify-content: space-evenly;
+}
+
+.add-guest-block{
+    border: 2px solid black;
+    width: 14rem;
+    height: 3.5rem;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin: 3rem;
+    margin-left: 3.8rem;
+}
+.reserve-btn{
+   color: white;
+   background-color: var(--primary-color);
+   width: 16rem;
+   height: 3.5rem;
+   text-align: center;
+   justify-content: center;
+   margin: 3.6rem;
+}
+
+.price-rating-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-for-no-of-guests{
+    margin: 5rem;
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+    justify-content: space-between;
+}
+
+.price-for-no-of-days{
+    margin: 5rem;
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+    justify-content: space-between;
+}
+.price-total{
+    border-top: 2px solid black;
+    margin: 5rem;
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+.mar-top{
+    margin-top: 1.3rem
 }

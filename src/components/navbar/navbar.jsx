@@ -1,12 +1,17 @@
 import React from 'react';
 import "./Navbar.css"
+import { SearchStayWithDate } from '../SearchStayWithDate/SearchStayWithDate';
+
+const handelsearch = () =>{
+
+}
 export const Navbar = () => {
   return (
     <header className="heading d-flex align-center justify-content">
         <h1 className="heading-1">
           <a className="link" href="/">Wanderlust Wonders</a>
         </h1>\
-      <nav className="d-flex align-center gap-large justify-content" >
+      <nav className="d-flex align-center gap-large justify-content" onClick={handelsearch}>
         <div>
           <div className='form-container d-flex align-center shadow cursor-pointer'>
           <span className='form-option'>Any Where</span>
