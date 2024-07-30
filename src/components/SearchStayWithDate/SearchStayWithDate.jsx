@@ -4,11 +4,14 @@ import { useDate } from "../../context";
 import { useCategory } from "../../context/catagory-context";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { type } from "@testing-library/user-event/dist/type";
+import { useNavigate } from "react-router-dom";
 
 export const SearchStayWithDate = () => {
   const { isdateinfocus,isdestinationisfocus , guests, destination, dateDispatch } = useDate();
   const { hotelCategory } = useCategory();
   const [hotels, setHotels] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,6 +54,14 @@ export const SearchStayWithDate = () => {
     })
   }
 
+  const handlesearchclick = () => {
+    dateDispatch({
+      type: "SEARCH_CLICKED"
+    })
+    navigate(`/hotels/${destination}`)
+  }
+
+  
   const hoteldestinationoptions = hotels.filter(({ address, state, city, country }) =>
     address.toLowerCase().includes(destination.toLowerCase()) ||
     state.toLowerCase().includes(destination.toLowerCase()) ||
@@ -97,7 +108,7 @@ export const SearchStayWithDate = () => {
           </div>
 
           <div className="search-container d-flex align-center cursor-pointer">
-            <span className="search-dest-1 material-icon-outlined">search</span>
+            <span className="search-dest-1 material-icon-outlined" onClick={handlesearchclick}>search</span>
           </div>
         </div>
       </div>

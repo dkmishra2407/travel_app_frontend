@@ -32,7 +32,7 @@ export const HotelCard = ({hotel}) => {
           </p>
           <p className="price-details">
             <span className="price">RS {price}</span>
-            <span> night</span>
+            <span className="price"> /night</span>
           </p>
         </div>
         {/* Wishlist button */}

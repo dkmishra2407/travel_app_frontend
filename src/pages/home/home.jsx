@@ -15,9 +15,7 @@ export const Home = () => {
 
   const [currentindex, setcurrentindex] = useState(16);
    const { hotelCategory } = useCategory();
-   const { isSearchModalopen } = useDate();
-   console.log(hotelCategory)
-
+   const { isSearchModalopen } = useDate(); 
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -50,6 +48,9 @@ export const Home = () => {
     }, 1000)
   }
 
+  const handleclosemodal = () =>{
+    isSearchModalopen = false;
+  }
   
   return (
     <Fragment>

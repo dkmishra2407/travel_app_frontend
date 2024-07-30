@@ -46,6 +46,11 @@ export const DateReducer = (state, { type, payload }) => {
         isdestinationisfocus :true
       }
       
+    case "SEARCH_CLICKED":
+      return{
+        ...state,
+        isSearchModalopen: false,
+      }
     default:
       return state;
   }

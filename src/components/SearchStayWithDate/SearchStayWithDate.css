@@ -75,3 +75,8 @@
     display: flex;
     align-content: center;
   }
+
+  .close-btn{
+    border-radius: 50%;
+    top: 20rem;
+  }
