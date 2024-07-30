@@ -11,13 +11,16 @@
     height: 37rem;
 }
 
-.price {
+.price-3 {
+    padding-top: 2rem;
     font-size: 1.25rem; /* Adjust font size as needed */
     font-weight: bold; /* Makes the price bold */
 }
 
 .rating-1 {
-    font-size: 1rem; /* Adjust font size as needed */
+    padding-top: 2rem;
+    font-size: 1.25rem; /* Adjust font size as needed */
+    padding-right: 1.2rem;
     color: #ffcc00; /* Optional: color for the star rating */
 }
 
@@ -32,7 +35,6 @@
     text-align: center;
     align-content: center;
     justify-content: center;
-    margin: 3rem;
     margin-left: 3.8rem;
 }
 .reserve-btn{
@@ -74,4 +76,26 @@
 
 .mar-top{
     margin-top: 1.3rem
+}
+
+.add-guest-block{
+    border: none;
+}
+
+.add-guest-block-text{
+    display: block;
+    font-weight: bold;
+}
+
+.CHECKIN{
+    display: block;
+}
+
+.check-in-out{
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+.guest-count{
+    border: none;
 }

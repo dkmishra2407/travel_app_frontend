@@ -1,0 +1,11 @@
+.Auth-Modal-Container{
+    background-color: var(--background-color);
+}
+
+.Auth-Modal-Container-login{
+    background-color: var(--primary-color);
+}
+
+.Auth-Modal-Container-signup{
+    background-color: var(--primary-color);
+}

@@ -1,7 +1,4 @@
 export const DateReducer = (state, { type, payload }) => {
-  console.log("Current State:", state);
-  console.log("Action Type:", type);
-  console.log("Payload:", payload);
   
   switch (type) {
     case "OPEN_SEARCH_MODAL":

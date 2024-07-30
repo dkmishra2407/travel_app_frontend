@@ -32,3 +32,5 @@ export const Datepicker = ({ placeholder, checkintype }) => {
     />
   );
 };
+
+export default Datepicker;

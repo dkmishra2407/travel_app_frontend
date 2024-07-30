@@ -1,13 +1,14 @@
 import React from 'react';
 import "./Navbar.css";
 import { SearchStayWithDate } from '../SearchStayWithDate/SearchStayWithDate';
-import { useDate } from '../../context';
+import { useDate,useAuth } from '../../context';
+import { AuthModal } from "../index"
 
 export const Navbar = () => {
   const { guests, destination, checkInDate, dateDispatch } = useDate();
+  const { openLoginSignup,AuthDispatch } = useAuth();
 
   const handleSearch = () => {
-    console.log("clicked");
     dateDispatch({
       type: "OPEN_SEARCH_MODAL",
     });
@@ -16,6 +17,16 @@ export const Navbar = () => {
   const getMonthName = (date) => {
     if (!date) return "Add date";
     return new Date(date).toLocaleString('default', { month: 'long' });
+  }
+
+  const handlepersonbutton = () => {
+    AuthDispatch({
+      type: "OPEN_LOGIN_SIGNUP"
+    })
+  }
+
+  const handlemenuclick = () => {
+
   }
   return (
     <header className="heading d-flex align-center justify-content">
@@ -35,10 +46,10 @@ export const Navbar = () => {
         </div>
         <div>
           <div className="timepasscontainer nav d-flex align-center cursor-pointer">
-            <span className="material-icons-outlined profile-option menu">
+            <span className="material-icons-outlined profile-option menu" onClick={handlemenuclick}>
               menu
             </span>
-            <span className="material-icons-outlined profile-option person">
+            <span className="material-icons-outlined profile-option person" onClick={handlepersonbutton}>
               person_2
             </span>
           </div>
