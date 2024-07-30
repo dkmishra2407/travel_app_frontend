@@ -1,0 +1,9 @@
+.search-dest{
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+.search-dest .input{
+    z-index: 1000;
+}

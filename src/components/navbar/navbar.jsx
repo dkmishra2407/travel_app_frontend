@@ -1,11 +1,18 @@
 import React from 'react';
 import "./Navbar.css"
 import { SearchStayWithDate } from '../SearchStayWithDate/SearchStayWithDate';
+import {useDate} from '../../context'
 
-const handelsearch = () =>{
-
-}
 export const Navbar = () => {
+
+  const { dateDispatch } = useDate();
+
+  const handelsearch = () =>{
+    console.log("clicked")
+    dateDispatch({
+      type: "OPEN_SEARCH_MODAL",
+    })
+  }
   return (
     <header className="heading d-flex align-center justify-content">
         <h1 className="heading-1">

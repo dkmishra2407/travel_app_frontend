@@ -1,10 +1,11 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import { Navbar } from '../../components';
+import { Navbar,SearchStayWithDate } from '../../components';
 import { HotelCard, Catagories } from '../../components';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import "./home.css";
 import { useCategory } from '../../context/catagory-context';
+import { useDate } from '../../context';
 
 
 export const Home = () => {
@@ -14,6 +15,7 @@ export const Home = () => {
 
   const [currentindex, setcurrentindex] = useState(16);
    const { hotelCategory } = useCategory();
+   const { isSearchModalopen } = useDate();
    console.log(hotelCategory)
 
   useEffect(() => {
@@ -51,6 +53,9 @@ export const Home = () => {
   
   return (
     <Fragment>
+      {
+        isSearchModalopen && <SearchStayWithDate/>
+      }
       <Navbar route="home" />
       <Catagories/>
       {

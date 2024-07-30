@@ -1,7 +1,7 @@
+// src/context/category-context.js
 import { createContext, useContext, useState } from "react";
 
 const initvalue = "National Parks";
-
 const CategoryContext = createContext();
 
 const CategoryProvider = ({ children }) => {
