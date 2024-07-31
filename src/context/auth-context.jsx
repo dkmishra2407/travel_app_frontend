@@ -7,6 +7,8 @@ const initialValue = {
     mobileNo: "", // Use camelCase for consistency
     password: "",
     openLoginSignup: false,
+    selectedtab: "login", // Use camelCase for consistency
+    isclosetap: true
 };
 
 const AuthContext = createContext(initialValue);

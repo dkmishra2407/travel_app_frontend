@@ -1,11 +1,59 @@
-.Auth-Modal-Container{
+.Auth-Modal-Container {
     background-color: var(--background-color);
+    right: 0;
+    top: 6rem;
+    z-index: 10000;
+    position: fixed;
+    cursor: pointer;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    width: 300px; /* Set a fixed width for the modal */
 }
 
-.Auth-Modal-Container-login{
-    background-color: var(--primary-color);
+.Auth-Modal-Container:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
 }
 
-.Auth-Modal-Container-signup{
+.Auth-Modal-Container-login,
+.Auth-Modal-Container-sign-up {
     background-color: var(--primary-color);
+    border: none;
+    font-size: 1.25rem;
+    width: 100%; /* Full width */
+    height: 3.5rem;
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 1rem; /* Space between buttons */
+    transition: background-color 0.3s ease;
+}
+
+.Auth-Modal-Container-login:hover,
+.Auth-Modal-Container-sign-up:hover {
+    background-color: var(--primary-color-hover); /* Change to a hover color */
+}
+
+.show-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    justify-content: center;
+    margin-top: 1rem; /* Space above the content */
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-size: 2rem; /* Increase size for visibility */
+    color: var(--primary-color);
+    position: absolute; /* Position close button */
+    top: 1rem;
+    right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.material-symbols-outlined:hover {
+    color: var(--primary-color-hover); /* Change color on hover */
 }

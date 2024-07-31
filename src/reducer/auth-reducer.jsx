@@ -6,6 +6,23 @@ export const authReducer = (state, action) => {
           openLoginSignup: !state.openLoginSignup,
         };
   
+        case "OPEN_SIGN_UP":
+          return{
+            ...state,
+            selectedtab: "signup"
+          }
+
+          case "OPEN_LOG_IN":
+            return{
+              ...state,
+              selectedtab: "login"
+            }
+
+          case "OPEN-SIGN-LOGIN":
+            return{
+              ...state,
+              isclosetap: !state.isclosetap
+            }
       default:
         return state;
     }
